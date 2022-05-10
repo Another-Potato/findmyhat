@@ -1,0 +1,24 @@
+{
+  "name": "findmyhat",
+  "version": "1.0.0",
+  "description": "Find My Hat Javascript assessment.",
+  "main": "findMyHat.js",
+  "scripts": {
+    "findMyHat": "node findMyHat.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Another-Potato/findmyhat.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Another-Potato/findmyhat/issues"
+  },
+  "homepage": "https://github.com/Another-Potato/findmyhat#readme",
+  "dependencies": {
+    "clear-screen": "^1.0.0",
+    "prompt-sync": "^4.2.0"
+  }
+}
