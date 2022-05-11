@@ -87,7 +87,7 @@ Move with:
 
     placePlayer() {
         if (this._playerX != 0 || this._playerY != 0){
-            if (!(this._playerY >= this._col || this._playerY < 0 || this._playerX >= this._row || this._playerX < 0)){
+            if (!(this._playerY >= this._row || this._playerY < 0 || this._playerX >= this._col || this._playerX < 0)){
                 this._field[this._playerY][[this._playerX]] = this._belowPlayer
             }
         }
@@ -156,7 +156,7 @@ Move with:
         this._playerY = y;
         
         //Check for out of bounds
-        if (this._playerY >= this._col || this._playerY < 0 || this._playerX >= this._row || this._playerX < 0){
+        if (this._playerY >= this._row || this._playerY < 0 || this._playerX >= this._col || this._playerX < 0){
             this._gameRunning = false;
             
             this._currentState = 4;
@@ -233,5 +233,5 @@ Move with:
 
 }
 
-const myGame = new Game();
+const myGame = new Game(15);
 myGame.runGame();
