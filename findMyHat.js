@@ -233,5 +233,5 @@ Move with:
 
 }
 
-const myGame = new Game(15);
+const myGame = new Game();
 myGame.runGame();
